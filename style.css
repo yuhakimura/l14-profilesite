@@ -1,0 +1,214 @@
+/* ===== Webサイト全体のスタイル ===== */
+/* html */
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+  
+  /* body */
+  body {
+    font-family: sans-serif;
+    height: 100%;
+    margin: 0;
+  }
+
+/* ヘッダーの箱 */
+header {
+    background-color: #193446;
+    height: 60px;/* 高さ */
+    padding: 10px;/* 上がわの余白 */
+}
+
+
+
+.slider_fade {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    float: none;
+}
+
+.slider_fade > li {
+    position: absolute;
+    list-style: none;
+    visibility: hidden;
+    animation: anime_slider_fade 12s 0s infinite;
+}
+.slider_fade > li:nth-of-type(2) {
+    animation-delay: 4s;
+}
+.slider_fade > li:nth-of-type(3) {
+    animation-delay: 8s;
+}
+ 
+@keyframes anime_slider_fade {
+    0% {
+        visibility: visible;
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    33.3% {
+        opacity: 1;
+    }
+    48.3% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.navigation{
+    margin-top: 576px;
+}
+
+/* ナビゲーションの箱 */
+nav {
+    background-color: #9aabb9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+  }
+  
+  /* リスト全体 */
+  nav ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  
+  /* １つ１つのリスト */
+  nav li {
+    display: inline-block;
+    margin-right: 70px;
+  }
+  
+  /* リンク */
+  nav a {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Sacramento;
+    text-decoration: none;
+  }
+  
+  /* リンクにふれた時 */
+  nav a:hover {
+    color: #193446;
+    transition: 0.7s;
+  }
+
+  .profile{
+      margin: 0px;
+      background-color: #E2B49A;
+      padding: 40px;
+  }
+
+  .title {
+    font-size: 40px;
+    border-left-style: solid;
+    border-left-width: 10px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-family: sacramento;
+    font-weight: bold;
+    color: #193446;
+  }
+
+  .profile img{
+      float: left;
+      margin-bottom: 20px;
+  }
+
+  .name{
+      margin-top: 40px;
+      font-weight: bold;
+      font-size: 40px;
+      font-family: sacramento;
+      color:#ffffff;
+      margin-bottom: 20px;
+  }
+
+  .profile p{
+      color: #ffffff;
+      font-size: 25px;
+      font-family: Zen Maru Gothic;
+      margin-bottom: 10px;
+  }
+
+  .profile ul{
+      list-style-type:none;
+      padding: 20px;
+      font-family: Zen Maru Gothic;
+      color: #ffffff;
+      font-size: 25px;
+      margin-left: 10px;
+      margin-bottom: 40px;
+  }
+
+  .like{
+    margin: 0px;
+    background-color: #193446;
+    padding: 40px;
+}
+
+.like h2{
+    color: #ffffff;
+}
+
+.portfolio{
+    margin: 0px;
+    background-color: #e9c77b;
+    padding: 40px;
+}
+
+.portfolio p{
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Zen Maru Gothic;
+    font-weight: 100;
+    color: #193446;
+}
+
+.contact{
+    margin: 0px;
+    background-color: #c4d4e0;
+    padding: 40px;
+    font-size: 150px;
+    
+
+}
+
+.contact div{
+    text-align: center;
+}
+
+footer{
+    background-color: #193446;
+    height: 60px;/* 高さ */
+    padding: 10px;/* 上がわの余白 */
+    text-align: center;
+    margin: 0px;
+    color: #ffffff;
+    font-family: sacramento;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.icons a{
+    margin: 30px;
+    color: #ffffff;
+}
+
+.icons a :hover{
+    color:#193446;
+    transition:0.7s;
+}
